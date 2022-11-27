@@ -31,6 +31,9 @@ public class Main {
 		case 7 :
 			Operations.insertAtSpecificIndex();
 			break;
+		case 8:
+            Operations.deleteAtIndexPosition();
+            break;
 		}
 		scan.close();
 	}

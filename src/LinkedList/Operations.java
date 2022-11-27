@@ -76,5 +76,19 @@ public class Operations {
 	     linkedList.print();
 		
 	}
+	 public static void deleteAtIndexPosition(){
+		 LinkedList linkedList = new LinkedList();
+		 Node firstNode = linkedList.push(70);
+		 Node secondNode = linkedList.push(30);
+		 Node newNode = linkedList.push(56);
+		 linkedList.insertAtSpecificIndex(2, 40);
+		 System.out.println("Befor :");
+		 linkedList.print();
+		 linkedList.size();
+		 System.out.println("After Deleting The Value :");
+		 linkedList.deleteAtIndexPosition(40);
+		 linkedList.print();
+		 linkedList.size();
 }
 
+}
