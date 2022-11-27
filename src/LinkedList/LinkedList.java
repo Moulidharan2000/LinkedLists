@@ -52,4 +52,21 @@ public class LinkedList {
 			Node temp = head;
 			head = temp.next;
 		}
+		
+		public void poplast() {
+			if(head == null) {
+				System.out.println("No Elements to Delete...");
+			}
+				else if(head.next == null) {
+					head = null;
+				}
+				else {
+					Node temp = head;
+					
+					while(temp.next.next != null) {
+						temp = temp.next;
+					}
+					temp.next = null;
+				}
+		}
 }

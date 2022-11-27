@@ -40,5 +40,17 @@ public class Operations {
 			System.out.println("After Deleting First Element : ");
 			linkedlist.print();
 		}
+		
+		public static void poplast() {
+			LinkedList linkedlist = new LinkedList();
+			Node firstNode = linkedlist.push(70);
+			Node secondNode = linkedlist.push(30);
+			Node newNode = linkedlist.push(56);
+			System.out.println("Before");
+			linkedlist.print();
+			linkedlist.poplast();
+			System.out.println("After Deleting the Last Element : ");
+			linkedlist.print();
+		}
 }
 

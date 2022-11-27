@@ -22,6 +22,9 @@ public class Main {
 		case 4 :
 			Operations.pop();
 			break;
+		case 5 :
+			Operations.poplast();
+			break;
 		}
 		scan.close();
 	}
