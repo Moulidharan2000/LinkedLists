@@ -47,4 +47,9 @@ public class LinkedList {
 	}
 
   }
+		public void pop() {
+			
+			Node temp = head;
+			head = temp.next;
+		}
 }

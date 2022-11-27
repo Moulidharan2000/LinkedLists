@@ -28,5 +28,17 @@ public class Operations {
 		linkedlist.insertData(firstNode,  newNode);
 		System.out.println("\nAfter");
 		linkedlist.print();
-	}
+	}	
+		public static void pop() {
+			LinkedList linkedlist = new LinkedList();
+			Node firstNode = linkedlist.push(70);
+			Node secondNode = linkedlist.push(30);
+			Node newNode = linkedlist.push(56);
+			System.out.println("Before");
+			linkedlist.print();
+			linkedlist.pop();
+			System.out.println("After Deleting First Element : ");
+			linkedlist.print();
+		}
 }
+

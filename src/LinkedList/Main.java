@@ -18,6 +18,10 @@ public class Main {
 			break;
 		case 3 :
 			Operations.insertData();
+			break;
+		case 4 :
+			Operations.pop();
+			break;
 		}
 		scan.close();
 	}
