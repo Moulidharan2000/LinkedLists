@@ -52,5 +52,15 @@ public class Operations {
 			System.out.println("After Deleting the Last Element : ");
 			linkedlist.print();
 		}
+		
+		public static void search() {
+			LinkedList linkedlist = new LinkedList();
+			Node firstNode = linkedlist.push(70);
+			 Node secondNode= linkedlist.push(30);
+		     Node newNode=linkedlist.push(56);
+		     System.out.println("Before");
+		     linkedlist.print();
+		     linkedlist.search(30);
+		}
 }
 

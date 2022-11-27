@@ -25,6 +25,9 @@ public class Main {
 		case 5 :
 			Operations.poplast();
 			break;
+		case 6 :
+			Operations.search();
+			break;
 		}
 		scan.close();
 	}
