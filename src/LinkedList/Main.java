@@ -28,6 +28,9 @@ public class Main {
 		case 6 :
 			Operations.search();
 			break;
+		case 7 :
+			Operations.insertAtSpecificIndex();
+			break;
 		}
 		scan.close();
 	}

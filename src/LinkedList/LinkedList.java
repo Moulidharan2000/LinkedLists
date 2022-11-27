@@ -96,4 +96,39 @@ public class LinkedList {
 	                System.out.println(searchData+ " is not found in LinkedList");
 	        }
 	    }
+		public int size() {
+	        int count = 0; 
+	        Node temp = head;
+	        while (temp != null) {
+	            count++;
+	            temp = temp.next;
+	        }
+	        return count;
+	    }
+		
+		 public void insertAtSpecificIndex(int userIndex, int data) {
+ 
+		        if (userIndex == 0) {
+		            push(data);
+		        }
+		        else if (userIndex == size()) {
+		           append(data);
+		        }
+		        else if (userIndex < 0 || userIndex >= size()) {
+		            System.out.println("Invalid index");
+		        }
+		        else {
+		            Node newNode = new Node(data);
+		            int index = 0;
+		            Node left = head;
+		            Node right = left.next;
+		            while (index < userIndex - 1) {
+		                left = left.next;
+		                right = right.next;
+		                index++;
+		            }
+		            newNode.next = right;
+		            left.next = newNode;
+		}
+}
 }

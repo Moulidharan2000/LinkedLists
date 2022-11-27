@@ -29,38 +29,52 @@ public class Operations {
 		System.out.println("\nAfter");
 		linkedlist.print();
 	}	
-		public static void pop() {
-			LinkedList linkedlist = new LinkedList();
-			Node firstNode = linkedlist.push(70);
-			Node secondNode = linkedlist.push(30);
-			Node newNode = linkedlist.push(56);
-			System.out.println("Before");
-			linkedlist.print();
-			linkedlist.pop();
-			System.out.println("After Deleting First Element : ");
-			linkedlist.print();
+	
+	public static void pop() {
+		LinkedList linkedlist = new LinkedList();
+		Node firstNode = linkedlist.push(70);
+		Node secondNode = linkedlist.push(30);
+		Node newNode = linkedlist.push(56);
+		System.out.println("Before");
+		linkedlist.print();
+		linkedlist.pop();
+		System.out.println("After Deleting First Element : ");
+		linkedlist.print();
 		}
 		
-		public static void poplast() {
-			LinkedList linkedlist = new LinkedList();
-			Node firstNode = linkedlist.push(70);
-			Node secondNode = linkedlist.push(30);
-			Node newNode = linkedlist.push(56);
-			System.out.println("Before");
-			linkedlist.print();
-			linkedlist.poplast();
-			System.out.println("After Deleting the Last Element : ");
-			linkedlist.print();
+	public static void poplast() {
+		LinkedList linkedlist = new LinkedList();
+		Node firstNode = linkedlist.push(70);
+		Node secondNode = linkedlist.push(30);
+		Node newNode = linkedlist.push(56);
+		System.out.println("Before");
+		linkedlist.print();
+		linkedlist.poplast();
+		System.out.println("After Deleting the Last Element : ");
+		linkedlist.print();
 		}
 		
-		public static void search() {
-			LinkedList linkedlist = new LinkedList();
-			Node firstNode = linkedlist.push(70);
-			 Node secondNode= linkedlist.push(30);
-		     Node newNode=linkedlist.push(56);
-		     System.out.println("Before");
-		     linkedlist.print();
-		     linkedlist.search(30);
-		}
+	public static void search() {
+		LinkedList linkedlist = new LinkedList();
+		Node firstNode = linkedlist.push(70);
+		Node secondNode= linkedlist.push(30);
+	    Node newNode=linkedlist.push(56);
+	    System.out.println("Before");
+	    linkedlist.print();
+	    linkedlist.search(30);
+	}
+
+	public static void insertAtSpecificIndex() {
+		 LinkedList linkedList = new LinkedList();
+		 Node firstNode = linkedList.push(70);
+		 Node secondNode = linkedList.push(30);
+		 Node newNode = linkedList.push(56);
+		 System.out.println("Before : ");
+		 linkedList.print();
+		 linkedList.insertAtSpecificIndex(2, 40);
+	     System.out.println("After adding element at Specific position : ");
+	     linkedList.print();
+		
+	}
 }
 
