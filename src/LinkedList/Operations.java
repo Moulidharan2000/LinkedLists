@@ -17,4 +17,16 @@ public class Operations {
 		linkedlist.append(70);
 		linkedlist.print();
 	}
+	
+	public static void insertData() {
+		LinkedList linkedlist = new LinkedList();
+		Node secondNode = linkedlist.push(70);
+		Node firstNode = linkedlist.push(56);
+		Node newNode = new Node(30);
+		System.out.println("\nBefore");
+		linkedlist.print();
+		linkedlist.insertData(firstNode,  newNode);
+		System.out.println("\nAfter");
+		linkedlist.print();
+	}
 }

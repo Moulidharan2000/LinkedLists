@@ -16,6 +16,8 @@ public class Main {
 		case 2 :
 			Operations.addDataAtEnd();
 			break;
+		case 3 :
+			Operations.insertData();
 		}
 		scan.close();
 	}

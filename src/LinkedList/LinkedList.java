@@ -29,6 +29,11 @@ public class LinkedList {
 			this.tail.next = newNode;
 		}
 	}
+	public void insertData(Node previousNode, Node newNode) {
+		Node tempNode = previousNode.next;
+		previousNode.next = newNode;
+		newNode.next = tempNode;
+	}
 		public void print() {
 			if(head == null) {
 				System.out.println("LinkedList is Empty");
@@ -41,5 +46,5 @@ public class LinkedList {
 		}
 	}
 
-}
+  }
 }
